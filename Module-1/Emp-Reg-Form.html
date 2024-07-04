@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Registration Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<style>
+		*{
+			font-family: "Poppins", sans-serif;
+			font-weight: 550;
+		}
+		</style>
+</head>
+<body>
+	<h1 align="center" style="color: #ff0000;">Employee Registration Form</h1>
+	<form >
+		<table align="center">
+			<tr>
+				<td></td>
+				<td>
+					<input type="radio" name="title" value="Mr"> Mr.
+					<input type="radio" name="title" value="Mrs"> Mrs.
+					<input type="radio" name="title" value="Ms"> Ms.
+				</td>
+			</tr>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="firstName" placeholder="First Name"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lastName" placeholder="Last Name"></td>
+			</tr>
+			<tr>
+				<td>Mail Address 1:</td>
+				<td><input type="text" name="mailAddress1"></td>
+			</tr>
+			<tr>
+				<td>Mail Address 2:</td>
+				<td><input type="text" name="mailAddress2"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td>
+					<select name="state">
+						<option value="Gujarat">Gujarat</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Zip:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td>Upload Photo:</td>
+				<td><input type="file" name="photo"></td>
+			</tr>
+			<tr>
+				<td>E-Mail:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Mobile:</td>
+				<td><input type="tel" name="mobile" value="+91" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td>Languages known:</td>
+				<td>
+					<input type="checkbox" name="language" value="Gujarati"> Gujarati <br>
+					<input type="checkbox" name="language" value="Hindi"> Hindi <br>
+					<input type="checkbox" name="language" value="English"> English <br>
+					<input type="checkbox" name="language" value="Marathi"> Marathi
+				</td>
+			</tr>
+			<tr>
+				<td>Additional Information:</td>
+				<td><textarea name="additionalInfo">optional</textarea></td> 
+            </tr>
+			<tr>
+                
+				<td colspan="2" align="center">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
